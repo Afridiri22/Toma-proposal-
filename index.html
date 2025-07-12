@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>তমা, আমি তোমায় ভালোবাসি ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffc3a0, #ffafbd);
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 10px 20px;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    .heart {
+      font-size: 5em;
+      color: red;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.4); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+    }
+
+    button {
+      background: #fff;
+      color: #e91e63;
+      border: none;
+      padding: 10px 25px;
+      font-size: 1.2em;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffe6ef;
+      transform: scale(1.05);
+    }
+
+    .floating-hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .heart-float {
+      position: absolute;
+      color: red;
+      font-size: 2em;
+      animation: floatUp 5s linear infinite;
+      opacity: 0.6;
+    }
+
+    @keyframes floatUp {
+      0% { bottom: 0; opacity: 0.6; }
+      100% { bottom: 100%; opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">❤️</div>
+  <h1>তমা, Will You Be Mine Forever?</h1>
+  <p>তুমি আমার জীবনের সবচেয়ে সুন্দর উপহার।<br>চলো আমরা একসাথে স্বপ্নগুলো গড়ে তুলি! 💍</p>
+
+  <div class="buttons">
+    <button onclick="alert('তোমার হ্যাঁ-ই আমার পৃথিবী! 🌸')">হ্যাঁ বলো 💖</button>
+    <button onclick="alert('তোমার সিদ্ধান্ত যত সময় লাগুক, আমি থাকব পাশে 😇')">ভেবে বলবো ☁️</button>
+  </div>
+
+  <div class="floating-hearts">
+    <div class="heart-float" style="left:10%; animation-delay: 0s;">❤️</div>
+    <div class="heart-float" style="left:25%; animation-delay: 1s;">💖</div>
+    <div class="heart-float" style="left:40%; animation-delay: 2s;">💕</div>
+    <div class="heart-float" style="left:60%; animation-delay: 3s;">❤️</div>
+    <div class="heart-float" style="left:75%; animation-delay: 4s;">💗</div>
+    <div class="heart-float" style="left:90%; animation-delay: 5s;">💘</div>
+  </div>
+</body>
+</html>
